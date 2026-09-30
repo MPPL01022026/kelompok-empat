@@ -4,105 +4,101 @@
 
 | Komponen | Keterangan |
 |---|---|
-| Nama Proyek | Pengembangan Sistem Informasi Kelurahan Cantik Berbasis Web |
-| Studi Kasus | Website Kelurahan Cantik (Cinta Statistik) Kota Palu |
-| Jenis Proyek | Pengembangan Sistem Informasi |
-| Metode Pengembangan | Agile |
+| Nama Proyek | Digital Twin Product Kopi Gayo |
+| Studi Kasus | UMKM Kopi Gayo di Kabupaten Aceh Tengah |
+| Jenis Proyek | Pengembangan Produk Digital |
+| Konsep | Digital Twin Product |
 | Platform | Website |
 | Durasi | 3 Bulan |
-| Project Manager | Ketua Tim Proyek |
 | Project Management Tool | GitHub |
 
 ## 2. Latar Belakang
 
-Program Kelurahan Cantik (Cinta Statistik) bertujuan meningkatkan kemampuan pemerintah kelurahan dalam mengelola dan memanfaatkan data statistik untuk mendukung perencanaan pembangunan.
+Kopi Gayo merupakan salah satu produk yang berasal dari dataran tinggi Gayo, termasuk Kabupaten Aceh Tengah. UMKM kopi Gayo memiliki peluang dalam pemasaran digital, tetapi masih terdapat kebutuhan untuk menyajikan informasi produk secara terstruktur dan mudah diakses oleh konsumen.
 
-Pengembangan sistem informasi berbasis web diperlukan untuk menyediakan media yang dapat menyajikan informasi profil kelurahan, data statistik, potensi wilayah, serta kegiatan kelurahan secara terstruktur dan mudah diakses.
+Proyek ini mengusulkan Digital Twin Product, yaitu representasi digital dari produk kopi dalam bentuk halaman produk berbasis web yang dapat diakses melalui QR Code. Informasi yang ditampilkan dapat mencakup identitas produk, asal kopi, jenis atau varietas, proses pengolahan, tingkat roasting, profil rasa, berat, kemasan, dan informasi UMKM.
 
 ## 3. Permasalahan
 
-1. Informasi kelurahan perlu disajikan dalam satu platform yang mudah diakses.
-2. Data statistik dan potensi kelurahan perlu dikelola secara terstruktur.
-3. Masyarakat membutuhkan akses informasi mengenai kondisi dan potensi wilayah.
-4. Pengembangan sistem membutuhkan koordinasi antar-stakeholder yang terstruktur.
+1. Informasi produk kopi belum selalu tersaji secara terstruktur dalam satu media digital.
+2. Konsumen membutuhkan informasi produk yang mudah diakses.
+3. Informasi asal dan proses produk perlu disampaikan dengan lebih transparan.
+4. UMKM membutuhkan media digital yang dapat mendukung pemasaran dan identitas produk.
 
 ## 4. Tujuan Proyek
 
-1. Mengembangkan sistem informasi Kelurahan Cantik berbasis web.
-2. Menyediakan informasi profil dan statistik kelurahan secara terstruktur.
-3. Menyediakan informasi potensi wilayah kelurahan.
-4. Mempermudah masyarakat memperoleh informasi kelurahan.
-5. Membantu pihak kelurahan dalam mengelola informasi secara digital.
+1. Mengembangkan Digital Twin Product untuk produk Kopi Gayo.
+2. Menyediakan representasi digital produk yang mudah diakses konsumen.
+3. Menyediakan informasi produk secara terstruktur.
+4. Mendukung transparansi informasi dan keterlacakan produk.
+5. Membantu UMKM memperkuat pemasaran digital.
 
 ## 5. Ruang Lingkup
 
 ### In Scope
-
-- Analisis kebutuhan sistem
-- Perancangan UI/UX
-- Perancangan database
-- Pengembangan website
-- Modul profil kelurahan
-- Modul data statistik
-- Modul potensi kelurahan
-- Modul berita dan kegiatan
-- Login administrator
-- Dashboard admin
+- Analisis kebutuhan UMKM dan konsumen
+- Perancangan Digital Twin Product
+- Perancangan UI/UX website
+- Perancangan database produk
+- Profil produk kopi
+- Informasi asal produk
+- Informasi proses pengolahan
+- Informasi roasting dan profil rasa
+- Informasi kemasan dan berat produk
+- QR Code menuju halaman Digital Twin
+- Dashboard pengelolaan data produk
 - Pengujian sistem
-- Deployment
 - Dokumentasi proyek
 
 ### Out of Scope
-
-- Pengembangan aplikasi mobile
-- Pengembangan sistem kependudukan nasional
-- Integrasi dengan seluruh database pemerintah
-- Pengadaan perangkat keras
-- Pengelolaan jaringan internet kantor
+- Produksi kopi secara fisik
+- Sistem pembayaran online
+- Aplikasi mobile native
+- Integrasi dengan sistem ERP UMKM
+- Pengadaan mesin produksi kopi
 
 ## 6. Deliverables
 
 1. Project Charter
 2. Stakeholder Register
 3. Work Breakdown Structure (WBS)
-4. Dokumen kebutuhan sistem
+4. Dokumen kebutuhan
 5. Desain UI/UX
-6. Database
-7. Website Kelurahan Cantik
-8. Dashboard Admin
-9. Hasil Pengujian
-10. Dokumentasi proyek
+6. Database Digital Twin Product
+7. Website Digital Twin Product
+8. QR Code produk
+9. Dashboard pengelolaan produk
+10. Hasil pengujian
+11. Dokumentasi proyek
 
 ## 7. Milestone
 
 | Milestone | Target |
 |---|---|
 | Project Initiation | Minggu 1 |
-| Analysis & Design | Minggu 2–4 |
-| Development | Minggu 5–8 |
-| Testing & Deployment | Minggu 9–11 |
-| Project Closing | Minggu 12 |
+| Analisis Kebutuhan | Minggu 2 |
+| Perancangan | Minggu 3–4 |
+| Pengembangan | Minggu 5–8 |
+| Testing | Minggu 9–10 |
+| Finalisasi | Minggu 11–12 |
 
 ## 8. Risiko Awal
 
 | Risiko | Dampak | Mitigasi |
 |---|---|---|
-| Data terlambat diberikan | Tinggi | Menentukan deadline pengumpulan data |
-| Perubahan kebutuhan | Sedang | Melakukan validasi kebutuhan secara berkala |
-| Keterlambatan anggota tim | Tinggi | Menggunakan GitHub Issues dan Projects |
-| Bug sistem | Sedang | Melakukan testing bertahap |
-| Koordinasi stakeholder kurang | Tinggi | Menentukan PIC setiap stakeholder |
+| Data produk tidak lengkap | Tinggi | Menentukan format data dan melakukan validasi |
+| Perubahan kebutuhan UMKM | Sedang | Melakukan validasi kebutuhan secara berkala |
+| Literasi digital pengguna terbatas | Sedang | Membuat antarmuka sederhana dan panduan |
+| Informasi produk tidak diperbarui | Sedang | Menyediakan dashboard pengelolaan data |
+| Keterlambatan pengembangan | Tinggi | Menggunakan GitHub Issues dan Project Board |
 
 ## 9. Kriteria Keberhasilan
 
 Proyek dianggap berhasil apabila:
-
-- Sistem dapat diakses melalui web.
-- Administrator dapat melakukan login.
-- Administrator dapat mengelola data.
-- Informasi profil kelurahan dapat ditampilkan.
-- Data statistik dapat ditampilkan.
-- Informasi potensi kelurahan dapat ditampilkan.
+- Digital Twin Product dapat diakses melalui website.
+- QR Code dapat mengarahkan pengguna ke halaman produk.
+- Informasi produk dapat ditampilkan secara terstruktur.
+- Data produk dapat dikelola oleh admin.
+- Informasi asal dan proses produk dapat ditampilkan.
 - Sistem telah melalui pengujian.
 - Dokumentasi proyek tersedia.
-- Pekerjaan proyek dapat dipantau melalui GitHub.
