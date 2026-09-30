@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Twin Product Kopi Gayo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f3ed;
+            color: #2d2118;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            background: #4b2e1f;
+            color: white;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e8c9a5;
+        }
+
+        .hero {
+            padding: 90px 0;
+            background: linear-gradient(135deg, #f7f3ed, #ead9c5);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .label {
+            color: #8a5a35;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #6d6258;
+            font-size: 17px;
+            max-width: 650px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 22px;
+            background: #4b2e1f;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #70482f;
+        }
+
+        .coffee-card {
+            background: white;
+            border-radius: 25px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.10);
+        }
+
+        .coffee-icon {
+            font-size: 120px;
+            margin-bottom: 15px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #71675e;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid #e3d9ce;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #71675e;
+        }
+
+        .product-section {
+            background: white;
+        }
+
+        .product-box {
+            background: #faf7f2;
+            border: 1px solid #e3d9ce;
+            border-radius: 22px;
+            padding: 30px;
+        }
+
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .product-id {
+            background: #eadccc;
+            color: #5a3721;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .status {
+            color: #4c7652;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .info {
+            background: white;
+            padding: 18px;
+            border-radius: 14px;
+        }
+
+        .info span {
+            display: block;
+            color: #86796d;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+
+        .info strong {
+            font-size: 16px;
+        }
+
+        .taste {
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #e3d9ce;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag {
+            border: 1px solid #d8c8b6;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #6f655d;
+            font-size: 17px;
+        }
+
+        .qr-section {
+            text-align: center;
+        }
+
+        .qr-card {
+            display: inline-block;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid #e3d9ce;
+            margin-top: 25px;
+        }
+
+        .qr-card img {
+            width: 220px;
+            height: 220px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .qr-card strong {
+            display: block;
+            font-size: 18px;
+        }
+
+        .qr-card span {
+            color: #786d64;
+            font-size: 13px;
+        }
+
+        footer {
+            background: #4b2e1f;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+        <div class="logo">☕ Kopi Gayo</div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#produk">Produk</a>
+            <a href="#qr">QR Code</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="beranda">
+    <div class="container hero-content">
+
+        <div>
+            <div class="label">
+                DIGITAL TWIN PRODUCT • ACEH TENGAH
+            </div>
+
+            <h1>
+                Kenali Kopi Gayo dari produk fisik hingga informasi digital.
+            </h1>
+
+            <p>
+                Digital Twin Product Kopi Gayo merupakan representasi digital
+                dari produk kopi yang menghubungkan produk fisik dengan
+                informasi digital melalui website dan QR Code.
+            </p>
+
+            <a href="#produk" class="btn">
+                Lihat Digital Twin
+            </a>
+        </div>
+
+        <div class="coffee-card">
+            <div class="coffee-icon">☕</div>
+            <h2>Kopi Gayo Arabika</h2>
+            <p>Digital Twin Product</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="tentang">
+    <div class="container">
+
+        <div class="section-title">
+            <div class="label">TENTANG PROYEK</div>
+
+            <h2>
+                Menghubungkan produk fisik dengan informasi digital
+            </h2>
+
+            <p>
+                Informasi produk disajikan dalam bentuk digital
+                agar lebih mudah diakses oleh konsumen.
+            </p>
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Informasi Produk</h3>
+                <p>
+                    Informasi produk Kopi Gayo disajikan secara terstruktur,
+                    mulai dari asal hingga karakteristik produk.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>QR Code</h3>
+                <p>
+                    QR Code menjadi penghubung antara kemasan kopi
+                    dengan halaman Digital Twin Product.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Identitas Digital</h3>
+                <p>
+                    Produk mempunyai halaman digital yang dapat digunakan
+                    sebagai media informasi dan promosi.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="product-section" id="produk">
+    <div class="container">
+
+        <div class="section-title">
+            <div class="label">DIGITAL TWIN PRODUCT</div>
+
+            <h2>Kopi Gayo Arabika</h2>
+
+            <p>
+                Informasi digital produk Kopi Gayo.
+            </p>
+        </div>
+
+        <div class="product-box">
+
+            <div class="product-header">
+                <span class="product-id">
+                    PRODUCT ID: KG-001
+                </span>
+
+                <span class="status">
+                    ● Aktif
+                </span>
+            </div>
+
+            <div class="info-grid">
+
+                <div class="info">
+                    <span>Asal Produk</span>
+                    <strong>Takengon, Aceh Tengah</strong>
+                </div>
+
+                <div class="info">
+                    <span>Jenis Kopi</span>
+                    <strong>Arabika</strong>
+                </div>
+
+                <div class="info">
+                    <span>Proses Pengolahan</span>
+                    <strong>Full Washed</strong>
+                </div>
+
+                <div class="info">
+                    <span>Tingkat Roasting</span>
+                    <strong>Medium</strong>
+                </div>
+
+                <div class="info">
+                    <span>Berat Produk</span>
+                    <strong>250 gram</strong>
+                </div>
+
+                <div class="info">
+                    <span>Jenis Kemasan</span>
+                    <strong>Aluminium Pouch</strong>
+                </div>
+
+            </div>
+
+            <div class="taste">
+                <h3>Profil Rasa</h3>
+
+                <div class="tags">
+                    <div class="tag">Chocolate</div>
+                    <div class="tag">Caramel</div>
+                    <div class="tag">Citrus</div>
+                    <div class="tag">Floral</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="section-title">
+            <div class="label">INFORMASI PRODUK</div>
+
+            <h2>Tentang Kopi Gayo</h2>
+        </div>
+
+        <p class="about-text">
+            Kopi Gayo merupakan kopi yang berasal dari kawasan dataran tinggi
+            Gayo di Kabupaten Aceh Tengah. Digital Twin Product ini dirancang
+            untuk menyediakan identitas dan informasi digital mengenai produk
+            sehingga konsumen dapat memperoleh informasi dengan mudah.
+        </p>
+
+    </div>
+</section>
+
+<section id="qr" class="qr-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <div class="label">
+                QR CODE PRODUCT
+            </div>
+
+            <h2>
+                Scan untuk membuka Digital Twin
+            </h2>
+
+            <p>
+                Scan QR Code berikut untuk mengakses halaman Digital Twin Product.
+            </p>
+
+        </div>
+
+        <div class="qr-card">
+
+            <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Franisimahbengi20-beep.github.io%2Fkelompok-empat%2F"
+                alt="QR Code Digital Twin Kopi Gayo"
+            >
+
+            <strong>KG-001</strong>
+            <span>Digital Twin Product Kopi Gayo</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            <strong>Digital Twin Product Kopi Gayo</strong>
+        </p>
+
+        <p>
+            Project Manajemen Perangkat Lunak – Kelompok 4
+        </p>
+
+        <p>
+            Kabupaten Aceh Tengah
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
