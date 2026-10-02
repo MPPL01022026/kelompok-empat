@@ -43,6 +43,10 @@ Informasi yang dapat ditampilkan meliputi identitas produk, asal kopi, jenis ata
 * [Project Charter](docs/project-charter.md)
 * [Stakeholder Register](docs/stakeholder-register.md)
 * [Work Breakdown Structure (WBS)](docs/wbs.md)
+* [Agile Methodology](docs/agile-methodology.md)
+* [UX Design](docs/ux-design.md)
+* [Function Point Analysis](docs/function-point.md)
+* [Project Setup](docs/project-setup.md)
 
 ## Project Management
 
